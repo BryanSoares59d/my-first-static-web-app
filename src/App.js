@@ -1,5 +1,8 @@
 import React from "react";
 import "./index.css";
+import perfil from "./img/perfil.jpeg";
+import instagram from "./img/instagram.png";
+import whatsapp from "./img/whatsapp.png";
 
 function App() {
   return (
@@ -12,6 +15,7 @@ function App() {
       <main className="container">
 
         <section className="card">
+        <img src={perfil} alt="Foto de Bryan" className="foto-perfil" />
           <h2>Sobre Mim</h2>
           <p>
             Me chamo <strong>Bryan Soares de Carvalho</strong>, tenho <strong>17 anos</strong> e resido em <strong>Suzano, São Paulo</strong>.  
@@ -55,9 +59,18 @@ function App() {
             <li>Email: soaresbryan313@gmail.com</li>
             <li>Telefone: (11) 9 6260-6110</li>
             <li>Cidade: Suzano - SP</li>
+            <div className="icones-contato">
+            <a href="https://wa.me/5511962606110" target="_blank" rel="noopener noreferrer">
+            <img src={whatsapp} alt="WhatsApp" className="icon" />
+            </a>
+
+            <a href="https://instagram.com/soareeshz" target="_blank" rel="noopener noreferrer">
+            <img src={instagram} alt="Instagram" className="icon" />
+            </a>
+            </div>
+
           </ul>
         </section>
-
       </main>
 
       <footer className="footer">
